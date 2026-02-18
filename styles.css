@@ -1,0 +1,158 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    background-color: #82c8de;
+    text-align: center;
+    margin-top: 50px
+}
+
+#container {
+    width: 75%;
+    margin: 0 auto;
+    background-color: #e5f2f6; 
+    padding: 10px;
+}
+
+#container:hover {
+    box-shadow: 0 2px 15px #1B63DE;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #1b0675;
+    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+}
+
+h3, h4 {
+    color: #000000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h4, #userLastName {
+    font-weight: unset;
+}
+
+/* Input fields */
+input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #66aaf3;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 15px;
+}
+
+button:hover {
+    background-color: #2580e2;
+}
+
+/* Labels and Radio Buttons */
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Sections */
+div {
+    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #afc3f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 15px #1B63DE;
+}
+
+/* animate the box-shadow property: https://tobiasahlin.com/blog/how-to-animate-box-shadow/ */
+
+div:hover {
+    box-shadow: 0 0 20px #024bc9;
+}
+
+
+.hidden {
+    margin-top: 10px;
+    display: none;
+}
+
+
+p {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 10px;
+}
+
+#timeBasedOnWeather, #murderMessage, #timeOptionsMessage, #suspectMessage, #killerMessage {
+    font-weight: bold;
+    font-size:large;
+    color: #006400;
+}
+
+span {
+    font-size:larger;
+    font-weight: bold;
+    color:#0f3a85;
+}
+
+span#time-option-1-text, span#time-option-2-text, span#time-option-3-text{
+    color:unset;
+    font-weight: unset;
+}
+
+#date {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+}
+
+#Blue1 {
+    background-color: #1aa5e6;
+}
+#Blue2 {
+    background-color: #417EE8;
+}
+#Blue3 {
+    background-color: #8EAFE8;
+}
+#Blue4 {
+    background-color: #69D8EB;
+}
+#Blue5 {
+    background-color: #82c8de;
+}
+
+#start {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Hover effects */
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Active effect */
+button:active {
+    transform: scale(1);
+}
+

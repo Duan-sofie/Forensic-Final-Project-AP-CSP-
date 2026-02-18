@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Final Project</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    </head>
+
+    <body>
+    <div id="homePage">
+        <h1>Simplified Forensic Criminalist Simulation</h1>
+        <h2>Welcome!</h2>
+
+        <h3>Before you start: Do you like (Are you interested in) forensic science?</h3>
+        <button id="loveIt">Love it</button>
+        <button id="likeIt">Like it</button>
+        <button id="idk">IDK</button>
+        <p id="interest"></p>
+        <button id="start" style="display: none;">Start</button>
+    </div>
+
+        <div id="container" class="hidden">
+        <h1>Simplified Forensic Criminalist</h1>
+        <p id="date"></p> 
+        <h3>The famous singer Ava ABCD was found dead in her house. Please help the police to find out the killer...</h3>
+        
+        <div id="step0">
+            <label for="username">Enter Your Last Name:</label>
+            <input type="text" id="username">
+            <button id="myButton">OK</button>
+            <p id="greeting"></p>
+            <h4>Select your Background Color:</h4>
+            <button id="Blue1">Blue #1</button>
+            <button id="Blue2">Blue #2</button>
+            <button id="Blue3">Blue #3</button>
+            <button id="Blue4">Blue #4</button>
+            <button id="Blue5">Original</button>
+            <br>
+            <button id="next0" style="display: none;">Next</button>
+        </div>
+
+        <div id="step1" class="hidden">
+        <h4><span>Step 1:</span> Murder or Suicide or Cannot be determined: Ava ABCD was found dead on her sofa. There were traces of the strangulation tool on her neck. The table in fornt of her was kicked over and all bottles, tissue boxes, and other stuffs fell on the floor. We found her own skin fibers in her nails. We identified this as......</h4>
+        <label><input type="radio" name="murderType" value="murder"> A murder</label><br>
+        <label><input type="radio" name="murderType" value="suicide"> A suicide</label><br>
+        <label><input type="radio" name="murderType" value="undetermined"> Cannot be determined</label><br>
+        <button id="submit1">Submit</button>
+        <button id="back1">Back</button>
+        <button id="next1" style="display: none;">Next</button>
+        <p id="murderMessage"></p>
+        </div>
+
+        <div id="step2" class="hidden">
+        <h4><label for="weatherCondition"><span>Step 2:</span> Select the Weather Condition (Choose one based on the weather conditions in your area):</label></h4>
+        Warm (70°F - 85°F / 21°C - 29°C)<br>
+        Normal (50°F - 69°F / 10°C - 21°C)<br>
+        Cool (30°F - 49°F / -1°C - 10°C)<br>
+        <input type="text" id="weatherCondition" placeholder="Enter weather condition (warm, cool, normal)">
+        <button id="weatherConditionBtn">OK</button>
+        <button id="back2">Back</button>
+        <button id="next2" style="display: none;">Next</button>
+        <p id="weatherMessage"></p>
+        </div>
+
+        <div id="step3" class="hidden">
+            <h4><span>Step 3:</span> Specific time since death: The measured corpse rectal temperature is 32°C. Using the equation time since death = (normal body temp - corpse rectal temp)/cooling rate °C. (The normal body temperature is 98.6°F, which is 37°C. Warm weather cooling rate: 0.5°C/h, normal weather cooling rate: 1°C/h, cool weather cooling rate: 1.5°C/h). </h4>
+            <p id="timeBasedOnWeather"></p>
+            <p id="hourlyTemp"></p>
+            <label><input type="radio" name="time" id="time-option-1"> <span id="time-option-1-text"></span></label><br>
+            <label><input type="radio" name="time" id="time-option-2"> <span id="time-option-2-text"></span></label><br>
+            <label><input type="radio" name="time" id="time-option-3"> <span id="time-option-3-text"></span></label><br>
+            <button id="submit3">Submit</button>
+            <p id="timeOptionsMessage"></p>
+            <button id="back3">Back</button>
+            <button id="next3" style="display: none;">Next</button>
+        </div>
+        
+        <div id="step4" class="hidden">
+            <h4><span>Step 4:</span> We investigated all people who had contacts with Ava ABCD recently. We asked about where were they when Ava died. Based on the time since death and these people's alibis, we found these suspects......</h4>
+            Alex A: Ava ABCD's teacher and friend, who was attending a seminar when the crime occurred. The meeting place was very far away from Ava ABCD's house. More than 100 people could testify.<br>
+            Roy R: Ava ABCD's firend, who claimed that he stayed at home all day long. No one can testify<br>
+            Ben B: Ava ABCD's new friend, who claimed that he was walking his dog in the neighborhood. No one could testify.<br>
+            Lucas L: Ava's ex-boyfriend, who claimed that he was at a birthday party when the crime occurred. More than 20 people could testify.<br>
+            May M: Ava ABCD's boss, claimed that she was at gym, but no one remembers seeing her there. <br>
+            Jessica J: Ava ABCD's assistant, who calimed that she went to Japan for a bussiness trip last week and went back 30 minutes ago. Her 2 colleagues could testify.<br>
+        <label><input type="checkbox" name="cb" value="Alex A"> Alex A</label><br>
+        <label><input type="checkbox" name="cb" value="Roy R"> Roy R</label><br>
+        <label><input type="checkbox" name="cb" value="Ben B"> Ben B</label><br>
+        <label><input type="checkbox" name="cb" value="Lucas L"> Lucas L</label><br>
+        <label><input type="checkbox" name="cb" value="May M"> May M</label><br>
+        <label><input type="checkbox" name="cb" value="Jessica J"> Jessica J</label><br>
+        <button id="submit4">Submit</button>
+        <button id="back4">Back</button>
+        <button id="next4" style="display: none;">Next</button>
+        <p id="suspectMessage"></p>
+        </div>
+
+        <div id="step5" class="hidden">
+            <h4><span>Step 5:</span> The killer: we found ...... is most likely to be the killer since he/she has the strongest motive to commit the crime. </h4><br>
+        Roy R: had conflicts with Ava ABCD three days ago. Roy wanted to borrow money from Ava, but Ava refused.<br>
+            Ben B: Ava ABCD's new friend, who she recently met at a club. They are not close friends.</br>
+            May M: Ava ABCD's boss, who awarded Ava ABCD a bonus recently.<br>
+        <label><input type="radio" name="killer" value="Roy R"> Roy R</label><br>
+        <label><input type="radio" name="killer" value="Ben B"> Ben B</label><br>
+        <label><input type="radio" name="killer" value="May M"> May M</label><br>
+        <button id="submit5">Submit</button>
+        <button id="back5">Back</button>
+        <button id="next5" style="display: none;">Next</button>
+        <p id="killerMessage"></p>
+        </div>
+        
+        <div id="congrats" class="hidden">
+            <p id="thx"></p>
+            <button id="yeah">Yeah!</button>
+            <button id="backC">Back</button>
+        </div>
+        
+        <div id="restart" class="hidden">
+            <h4>Would you like to restart the simulation?</h4>
+            <button id="restartYes">Yes</button>
+            <button id="restartNo">No</button>
+            <button id="backR">Back</button>
+        </div>        
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
